@@ -2,7 +2,7 @@ name: Scheduled Hello
 
 on:
   schedule:
-    - cron: '42 13 * * *'
+    - cron: '48 13 * * *'
 
 jobs:
   say_hello:
