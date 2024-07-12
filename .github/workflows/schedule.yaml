@@ -2,12 +2,11 @@ name: Scheduled Hello
 
 on:
   schedule:
-    - cron: '*/6 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
-  say_hello:
-    name: Say Hello
+  test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Hello
-        run: echo hello
+      - name: Date
+        run: echo "Scheduled job" && date
