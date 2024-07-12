@@ -1,0 +1,13 @@
+name: Delayed Hello
+
+on:
+  schedule:
+    - cron: '1 * * * *'
+
+jobs:
+  say_hello:
+    name: Say Hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Hello
+        run: echo hello
