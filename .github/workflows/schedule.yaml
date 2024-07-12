@@ -1,4 +1,4 @@
-name: Delayed Hello
+name: Scheduled Hello
 
 on:
   schedule:
